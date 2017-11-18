@@ -6,7 +6,7 @@ movieDiv.style.visibility="hidden";
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
+};
       
 function famousQuote(){
     movieDiv.style.visibility = "hidden";
@@ -16,18 +16,16 @@ function famousQuote(){
     document.getElementById("authortext").innerHTML="-" + famousQuotes[n].author;
     document.getElementById("mqtext").innerHTML= '"' + famousQuotes[n].quote + '"';
     document.getElementById("matext").innerHTML="-" + famousQuotes[n].author;
-    
 };
 
 function movieQuote(){
     famousDiv.style.visibility="hidden";
-    var n = getRndInteger(0, 2);
+    var n = getRndInteger(0, 9);
     movieDiv.style.visibility = "visible";
     document.getElementById("quotemovietext").innerHTML= '"' + movieQuotes[n].quote + '"';
     document.getElementById("movietext").innerHTML="-" + movieQuotes[n].author;
     document.getElementById("mqtext").innerHTML= '"' + movieQuotes[n].quote + '"';
     document.getElementById("matext").innerHTML="-" + movieQuotes[n].author;
-    
 };
 
 var famousQuotes = [
@@ -44,8 +42,32 @@ var famousQuotes = [
     ];
 
 var movieQuotes = [
-            {quote: "mfnfj jtjtorsej fefhjdhgrei", author: "lkj hgf"},
-            {quote: "rujeemk nfkerhe jfru4ru4gjfd", author: "asd fgh"},
-            {quote: "itjtn fdj ;fgeofej 849 fg", author: "qaz bvc"}
+            {quote: "Frankly, my dear, I don't give a damn.", author: "Gone with the Wind"},
+            {quote: "I'm gonna make him an offer he can't refuse.", author: "The Godfather"},
+            {quote: "Toto, I've a feeling we're not in Kansas anymore.", author: "Wizard of Oz"},
+            {quote: "You talking to me?", author: "Taxi Driver"},
+            {quote: "What we've got here is failure to communicate.", author: "Cool Hand Luke"},
+            {quote: "You're gonna need a bigger boat.", author: "Jaws"},
+            {quote: "If you build it, he will come.", author: "Field of Dreams"},
+            {quote: "We'll always have Paris", author: "Casablanca"},
+            {quote: "Greed, for lack of a better word, is good.", author: "Wall Street"},
+            {quote: "Gentlemen, you can't fight in here! This is the War Room!", author: "Dr. Strangelove"}
         ];
+        
+ 
+        
+function tweetfamous () {
+  var tweetQuote = document.getElementById('quotetext').innerText + document.getElementById("authortext").innerHTML;
+  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(tweetQuote));
+}
 
+function tweetmovie () {
+  var tweetmQuote = document.getElementById('quotemovietext').innerText + document.getElementById("movietext").innerHTML;
+  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(tweetmQuote));
+}
+
+
+function tweetmobile() {
+  var tweetmQuote = document.getElementById('mqtext').innerText;
+  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(tweetmQuote));
+}
