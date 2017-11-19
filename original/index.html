@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Lobster|Merriweather" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<title>Random Quote Generator</title>
+</head>
+<body>
+	<div class="jumbotron-fluid">
+		<div class="container-fluid">
+			<h1>Random Quote Generator</h1>
+		</div>
+		<div class="container-fluid" id="mobile">
+			<p id="mqtext"></p>
+			<p id="matext"></p>
+			<ul class="social-network social-circle"><li><button class="icoTwitter" title="Twitter" onclick="tweetmobile()"></button><i class="fa fa-twitter"></i></a>
+</li></ul>
+		</div>
+		<div class="container-fluid" id="famous">
+			<p id="quotetext"></p>
+			<p id="authortext"></p>
+			<ul class="social-network social-circle"><li><button class="icoTwitter" title="Twitter" onclick="tweetfamous()"></button><i class="fa fa-twitter"></i></a>
+</li></ul>
+	
+		</div>
+		<div class="container-fluid" id="buttons">
+			<button class="btn btn-primary btn-lg" onclick="famousQuote()" type="button">Get Famous Quote</button> <button class="btn btn-primary btn-lg" onclick="movieQuote()" type="button">Get Movie Quote</button>
+		</div>
+		<div class="container-fluid" id="movie">
+			<p id="quotemovietext"></p>
+			<p id="movietext"></p>
+			<ul class="social-network social-circle"><li><button class="icoTwitter" title="Twitter" onclick="tweetmovie()"></button></i></a>
+</li></ul>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+	</script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script> 
+	<script src="script.js">
+	</script>
+</body>
+</html>
