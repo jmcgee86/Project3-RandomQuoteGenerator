@@ -1,0 +1,114 @@
+.jumbotron-fluid {
+	background: url("https://i.ytimg.com/vi/IcAnhnmWPOI/maxresdefault.jpg") no-repeat center center fixed;
+	background-size: cover;
+	height: 100vh;
+	overflow: scroll;
+}
+#titlebg {
+	background-color: grey;
+	opacity: .7;
+}
+.jumbotron-fluid h1 {
+	text-align: center;
+	color: black;
+	font-weight: 700;
+	font-family: "Fredericka the Great";
+	font-size: 2.5em;
+}
+#quotetext {
+	font-family: "Amatic SC", "Raleway", "Lobster";
+	font-size: 2em;
+	color: white;
+	text-align: center;
+}
+#authortext {
+	font-family: "Amatic SC", "Raleway", "Lobster";
+	font-size: 2em;
+	color: white;
+	text-align: right;
+}
+#rquotetext {
+	font-family: "Amatic SC", "Raleway", "Lobster";
+	font-size: 2em;
+	color: white;
+	text-align: center;
+}
+#rs {
+	font-family: "Amatic SC", "Raleway", "Lobster";
+	font-size: 2em;
+	color: white;
+	text-align: right;
+}
+#stuff {
+	margin-top: 10vw;
+	background-color: #34495e;
+	opacity: .9;
+	width: 75vw;
+	text-align: center;
+}
+#rquote {
+	margin-top: 0;
+	background-color: #34495e;
+	opacity: .9;
+	width: 75vw;
+	text-align: center;
+}
+#rquote p {
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	margin-left: 4vw;
+	margin-right: 4vw;
+}
+#buttons {
+	text-align: center;
+	opacity: .8;
+	width: 75vw;
+}
+.btn {
+	margin: 10px;
+}
+#mobile {
+	display: none;
+	margin-top: 0;
+	background-color: #34495e;
+	opacity: .9;
+	width: 75vw;
+	text-align: center;
+}
+
+@media (max-width: 750px) {
+	.jumbotron-fluid h1 {
+		display: none;
+	}
+	#buttons {
+		width: 100vw;
+	}
+	.btn {
+		margin-top: 5px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#mobile {
+		display: inherit;
+		margin-top: 5vh;
+		background-color: #34495e;
+		opacity: .9;
+		width: 75vw;
+		text-align: center;
+		color: white;
+		font-family: "Amatic SC", "Raleway", "Lobster";
+	}
+	#rquote {
+		display: none;
+	}
+	#stuff {
+		display: none;
+	}
+	#mobile p {
+		margin-top: 4vh;
+		margin-bottom: 4vh;
+		margin-left: 4vw;
+		margin-right: 4vw;
+		font-size: 1.5em;
+	}
+}

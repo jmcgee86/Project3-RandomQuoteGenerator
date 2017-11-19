@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Lobster|Merriweather" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<title>Ron Swanson Random Quote Generator</title>
+</head>
+<body>
+	<div class="jumbotron-fluid" id="background">
+		<div class="container-fluid" id="titlebg">
+			<h1 id="titletext">Ron Swanson Quote Generator</h1>
+		</div>
+		<div class="container-fluid" id="mobile">
+			<p id="mtext"></p>
+			<p id="matext"></p><a class="btn btn-social-icon btn-twitter" onclick="mobileTweet()"><span class="fa fa-twitter"></span></a> <a class="btn btn-social-icon btn-reddit" onclick="mobileReddit()"><span class="fa fa-reddit"></span></a>
+		</div>
+		<div class="container-fluid" id="stuff">
+			<p id="quotetext"></p>
+			<p id="authortext"></p><a class="btn btn-social-icon btn-twitter" onclick="tweetLikes()"><span class="fa fa-twitter"></span></a> <a class="btn btn-social-icon btn-reddit" onclick="redditLikes()"><span class="fa fa-reddit"></span></a>
+		</div>
+		<div class="container-fluid" id="buttons">
+			<button class="btn btn-primary btn-lg" onclick="ronQuote()" type="button">Get Ron Swanson Quote</button> <button class="btn btn-primary btn-lg" onclick="likesQuote()" type="button">Get Quote About Stuff Ron Likes</button>
+		</div>
+		<div class="container-fluid" id="rquote">
+			<p id="rquotetext"></p>
+			<p id="rs">- Ron Swanson</p><a class="btn btn-social-icon btn-twitter" onclick="tweetRon()"><span class="fa fa-twitter"></span></a> <a class="btn btn-social-icon btn-reddit" onclick="redditRon()"><span class="fa fa-reddit"></span></a>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+	</script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script> 
+	<script src="script.js">
+	</script>
+</body>
+</html>
